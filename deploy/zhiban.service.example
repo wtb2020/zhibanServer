@@ -1,0 +1,17 @@
+[Unit]
+Description=Zhiban course server
+After=network.target
+
+[Service]
+Type=simple
+User=zhiban
+Group=zhiban
+WorkingDirectory=/opt/zhiban/zhiban-server
+ExecStart=/opt/zhiban/zhiban-server/.venv/bin/python -u /opt/zhiban/zhiban-server/run.py --host 0.0.0.0 --port 8000
+Restart=on-failure
+RestartSec=3
+UMask=0077
+NoNewPrivileges=true
+
+[Install]
+WantedBy=multi-user.target

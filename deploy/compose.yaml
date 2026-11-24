@@ -1,0 +1,15 @@
+services:
+  courses:
+    build:
+      context: ..
+      dockerfile: Dockerfile
+    restart: unless-stopped
+    ports:
+      - "127.0.0.1:8000:8000"
+    environment:
+      EDU_PUBLIC_URL: "${EDU_PUBLIC_URL:-}"
+    volumes:
+      - course-data:/app/data
+
+volumes:
+  course-data:

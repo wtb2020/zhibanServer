@@ -1,0 +1,13 @@
+{
+  "title": "Hello, World! 认识身边的事物",
+  "description": "英语启蒙 · 实物交互课程 · 读音与拼写",
+  "version": "1.0",
+  "items": [
+    {"id":"apple","tag":"04A10001","word":"apple","meaning":"苹果","emoji":"🍎"},
+    {"id":"banana","tag":"04A10002","word":"banana","meaning":"香蕉","emoji":"🍌"},
+    {"id":"cat","tag":"04A10003","word":"cat","meaning":"小猫","emoji":"🐱"},
+    {"id":"dog","tag":"04A10004","word":"dog","meaning":"小狗","emoji":"🐶"},
+    {"id":"book","tag":"04A10005","word":"book","meaning":"书本","emoji":"📚"},
+    {"id":"car","tag":"04A10006","word":"car","meaning":"汽车","emoji":"🚗"}
+  ]
+}
